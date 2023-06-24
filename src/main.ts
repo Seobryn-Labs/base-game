@@ -1,6 +1,6 @@
+import '@babylonjs/inspector'
 import Game from './game'
 import './style.css'
 
-const canvas = document.querySelector('#Game') as HTMLCanvasElement
-
-const game = new Game(canvas)
+// eslint-disable-next-line no-new
+new Game(document.querySelector('#Game') as HTMLCanvasElement)
